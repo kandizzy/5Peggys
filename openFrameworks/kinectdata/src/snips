@@ -1,0 +1,107 @@
+// snips file, for holding onto code
+
+/*
+
+// we do two thresholds - one for the far plane and one for the near plane
+// we then do a cvAnd to get the pixels which are a union of the two thresholds
+if(bThreshWithOpenCV) {
+    grayThreshNear = grayImage;
+    grayThreshFar = grayImage;
+    grayThreshNear.threshold(nearThreshold, true);
+    grayThreshFar.threshold(farThreshold);
+    cvAnd(grayThreshNear.getCvImage(), grayThreshFar.getCvImage(), grayImage.getCvImage(), NULL);
+} else {
+    
+    // or we do it ourselves - show people how they can work with the pixels
+    unsigned char * pix = grayImage.getPixels();
+    
+    int numPixels = grayImage.getWidth() * grayImage.getHeight();
+    for(int i = 0; i < numPixels; i++) {
+        if(pix[i] < nearThreshold && pix[i] > farThreshold) {
+            pix[i] = 255;
+        } else {
+            pix[i] = 0;
+        }
+    }
+}
+ 
+*/
+
+/*
+void testApp::drawPointCloud() {
+	int w = 640;
+	int h = 480;
+	ofMesh mesh;
+	mesh.setMode(OF_PRIMITIVE_POINTS);
+	int step = 2;
+	for(int y = 0; y < h; y += step) {
+		for(int x = 0; x < w; x += step) {
+			if(kinect.getDistanceAt(x, y) > 0) {
+				mesh.addColor(kinect.getColorAt(x,y));
+				mesh.addVertex(kinect.getWorldCoordinateAt(x, y));
+			}
+		}
+	}
+	glPointSize(3);
+	ofPushMatrix();
+	// the projected points are 'upside down' and 'backwards' 
+	ofScale(1, -1, -1);
+	ofTranslate(0, 0, -1000); // center the points a bit
+	glEnable(GL_DEPTH_TEST);
+	mesh.drawVertices();
+	glDisable(GL_DEPTH_TEST);
+	ofPopMatrix();
+}
+*/
+
+
+/*
+
+    // ROI 1
+    grayImage.setROI(0, 0, 160, 120);
+    ofxCvGrayscaleImage quad1;
+    quad1.setFromPixels( grayImage.getRoiPixels(), 160, 120 );
+    quad1.draw(250, 10);
+    ofDrawBitmapString("ROI display" , ofPoint(250, 20));
+
+    
+    quad1.resize(25, 25);
+    quad1.draw(620,10, 125, 125);
+    ofDrawBitmapString("peggy simulation" , ofPoint(620, 20));
+    
+    grayImage.resetROI();
+    
+    // ROI 2
+    grayImage.setROI(160, 0, 160, 120);
+    ofxCvGrayscaleImage quad2;
+    quad2.setFromPixels( grayImage.getRoiPixels(), 160, 120 );
+    quad2.draw(415, 10);
+    
+    quad2.resize(25, 25);
+    quad2.draw(750,10, 125, 125);
+    
+    grayImage.resetROI();
+    
+    // ROI 3
+    grayImage.setROI(0, 120, 160, 120);
+    ofxCvGrayscaleImage quad3;
+    quad3.setFromPixels( grayImage.getRoiPixels(), 160, 120 );
+    quad3.draw(250, 135);
+    
+    quad3.resize(25, 25);
+    quad3.draw(620,140, 125, 125);
+    
+    grayImage.resetROI();
+    
+    // ROI 4
+    grayImage.setROI(160, 120, 160, 120);
+    ofxCvGrayscaleImage quad4;
+    quad4.setFromPixels( grayImage.getRoiPixels(), 160, 120 );
+    quad4.draw(415, 135);
+    
+    quad4.resize(25, 25);
+    quad4.draw(750,140, 125, 125);
+    
+    grayImage.resetROI();
+
+*/

@@ -57,11 +57,11 @@
 #define DISP_BUFFER_SIZE 325
 #define MAX_BRIGHTNESS 15
 
-// #define TWI_SLAVE_ID 34
+#define TWI_SLAVE_ID 34
 //#define TWI_SLAVE_ID 35
 //#define TWI_SLAVE_ID 36
 //#define TWI_SLAVE_ID 37
-#define TWI_SLAVE_ID 38
+//#define TWI_SLAVE_ID 38
 
 
 // int x;

@@ -4,7 +4,7 @@
 // TWI/I2C data for a Peggy 2.0 with the VideoPeggyTwi firmware.
 //
 
-#define PEGGY_ADDRESS 30
+#define PEGGY_ADDRESS 34
 
 #define TWI_FREQ 300000
 

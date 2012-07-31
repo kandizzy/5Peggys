@@ -18,9 +18,10 @@ void setup()
   //UCSR0B = (1<<RXEN0) | (1<<TXEN0);
 
   //Serial.print("Sender Initialized...");
-  Wire.begin();
+  Wire.begin();  
 
- PORTC |=  _BV(5) | _BV(4);      // //PORTC |=  (1<<PC5) | (1<<PC4); // enable pullups
+ //PORTC |=  _BV(5) | _BV(4);
+ PORTC |=  (1<<5) | (1<<4); // enable pullups
 
   // jack up the frequency for TWI, we need a pretty high
   // rate  from the TWI engine for this to handle 115k input

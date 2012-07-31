@@ -362,11 +362,11 @@ void serviceInputData(void)
 		if (state  <6)
 		{
                         // BADDCAFE (board 5)
-                        if (state == 0 && c == 0xba) state++;
-			else if (state ==1 && c == 0xdd) state++;
-			else if (state ==2 && c == 0xca) state++;
-			else if (state ==3 && c == 0xfe) state++;
-			else if (state ==4 && c == 0x01) state++;
+                        //if (state == 0 && c == 0xba) state++;
+			//else if (state ==1 && c == 0xdd) state++;
+			//else if (state ==2 && c == 0xca) state++;
+			//else if (state ==3 && c == 0xfe) state++;
+			//else if (state ==4 && c == 0x01) state++;
 
                         // FEEDFACE (board 4)
                         //if (state == 0 && c == 0xfe) state++;
@@ -383,11 +383,11 @@ void serviceInputData(void)
 			//else if (state ==4 && c == 0x01) state++;
                         
                         //CAFEFEED (board 2)
-                        //if (state == 0 && c == 0xca) state++;
-			//else if (state ==1 && c == 0xfe) state++;
-			//else if (state ==2 && c == 0xfe) state++;
-			//else if (state ==3 && c == 0xed) state++;
-			//else if (state ==4 && c == 0x01) state++;
+                        if (state == 0 && c == 0xca) state++;
+			else if (state ==1 && c == 0xfe) state++;
+			else if (state ==2 && c == 0xfe) state++;
+			else if (state ==3 && c == 0xed) state++;
+			else if (state ==4 && c == 0x01) state++;
                         
                         // DEADBEEF (board 1)
 			//if (state == 0 && c == 0xde) state++;

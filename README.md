@@ -10,4 +10,4 @@ and electronics (Windell Oskay at [Evil Mad Scientist](http://www.evilmadscienti
 [I2C learnings from Jay's Projects 2](http://www.planetclegg.com/projects/Twi2Peggy.html)
 
 
-![Example](https://www.dropbox.com/s/386qcm0p5rzo0ck/5peggys.gif?dl=1)
+![Example](https://www.dropbox.com/s/j88g7ikuoyt8k30/5peggys-50.gif??dl=1)
